@@ -71,5 +71,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For any questions or feedback, please contact [ramankumarkannaujiya@gmail.com]
 
 ---
-
-Feel free to modify the details as needed to fit your specific project.
