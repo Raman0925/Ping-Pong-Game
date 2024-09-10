@@ -17,7 +17,7 @@ To get started with the Ping Pong game, follow these steps:
 
 1. **Clone the repository**:
     ```bash
-    git clone 
+    git clone https://github.com/Raman0925/Ping-Pong-Game.git
     ```
 2. **Navigate to the project directory**:
     ```bash
@@ -68,7 +68,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any questions or feedback, please contact [your-email@example.com](mailto:your-email@example.com).
+For any questions or feedback, please contact [ramankumarkannaujiya@gmail.com]
 
 ---
 
