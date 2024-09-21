@@ -8,8 +8,16 @@ let gameRunning = false; // Game state
 let gameLoopId;
 let ballx = 50; 
 let bally = 50;
+
+ // Initial Speed of the ball
 let dx = 2;
 let dy = 2;
+
+const speedIncrement = 0.1;
+const maxSpeed = 10
+let frameCount = 0;
+
+
 let paddleY = 0;
 const dpy = 5;
 
@@ -66,6 +74,14 @@ const gameLoop = () => {
         bally <= paddle.offsetTop + paddle.offsetHeight) {
         dx *= -1;
     }
+    frameCount++;
+    const frameRate =60;
+    if (frameCount % frameRate === 0) { // Every second
+        if (Math.abs(dx) < maxSpeed) {
+            dx += (dx > 0 ? speedIncrement : -speedIncrement); // Increase speed
+            dy += (dy > 0 ? speedIncrement : -speedIncrement); // Increase speed
+        }
+    }
 
     // Request the next frame
     gameLoopId = requestAnimationFrame(gameLoop);
@@ -95,6 +111,8 @@ const stopGame = () => {
         ball.style.left = `${ballx}px`;
         ball.style.top = `${bally}px`;
         paddle.style.top = `${paddleY}px`;
+        dx =2;
+        dy =2;
     }
 };
 
